@@ -1,0 +1,352 @@
+/* ========== ESTILOS GENERALES ========== */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url('fondo.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ========== HEADER / ENCABEZADO ========== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.reservarr {
+  color: #5a2b00;
+  padding: 12px 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(199, 12, 12, 0.945);
+}
+
+
+
+.home-icon {
+  font-size: 32px;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.logout {
+  margin-right: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* ========== NAVEGACIÓN PRINCIPAL ========== */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background: white;
+  color: #5a2b00;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ========== SECCIÓN: QUIÉNES SOMOS ========== */
+.quienes {
+  padding: 60px 30px;
+  background-color: #fffaf6;
+  font-family: 'Georgia', serif;
+  color: #5a2b00;
+  border-radius: 30px;
+}
+
+.contenedor-quienes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.text-box {
+  flex: 1.1;
+  min-width: 320px;
+}
+
+.text-box h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.text-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 580px;
+}
+
+.img-box {
+  flex: 0.9;
+  min-width: 300px;
+  text-align: right;
+}
+
+.img-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== SECCIÓN: GALERÍA / CARRUSEL ========== */
+.gallery-carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.gallery-track-container {
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slide {
+  min-width: 100%;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #5a2b00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* ========== SECCIÓN: HABITACIONES / PLANES Y SERVICIOS ========== */
+.habitaciones-section {
+  background-color: #fffaf6;
+  padding: 60px 30px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #5a2b00;
+  border-radius: 30px;
+}
+
+.titulo-habitaciones {
+  font-size: 36px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.habitaciones-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ========== TARJETAS DE HABITACIONES ========== */
+.habitacion-card {
+  background-color: #fdfaf7;
+  border: 1px solid #d5c4b1;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.habitacion-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.habitacion-card .info {
+  padding: 20px;
+}
+
+.habitacion-card .info p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.habitacion-card .info h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #5a2b00;
+}
+
+/* ========== DETALLE DE HABITACIONES ========== */
+.habitaciones-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 40px;
+  background-color: #fffaf6;
+  font-family: 'Georgia', serif;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.habitacion-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.habitacion-detalle .texto {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.habitacion-detalle h2 {
+  font-size: 36px;
+  color: #5a2b00;
+  margin-bottom: 20px;
+}
+
+.habitacion-detalle .texto img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.habitacion-detalle .texto button {
+  background-color: white;
+  color: #5a2b00;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 3px;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.habitacion-detalle .imagenes {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.habitacion-detalle .imagenes img {
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== SECCIÓN: UBICACIÓN / MAPA ========== */
+.seccion-mapa {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-mapa {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family: 'Georgia', serif;
+}
+
+.contenedor-mapa {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== PIE DE PÁGINA / FOOTER ========== */
+.footer {
+  background-color: #442f239d;
+  color: white;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #ffffff75;
+  padding: 20px;
+  box-sizing: border-box
+}
